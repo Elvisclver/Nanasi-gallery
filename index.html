@@ -204,36 +204,25 @@
     <img src="images/01%20JPG%20(1).png" alt="Nanasi Bakery Cake">
 </div>
 
-        <div class="photo">
-            <div class="placeholder">
-                PHOTO 03
-            </div>
-        </div>
+<div class="gallery" id="photoGallery"></div>
 
-        <div class="photo">
-            <div class="placeholder">
-                PHOTO 04
-            </div>
-        </div>
+<script>
+    const gallery = document.getElementById("photoGallery");
 
-        <div class="photo">
-            <div class="placeholder">
-                PHOTO 05
-            </div>
-        </div>
+    for (let i = 1; i <= 40; i++) {
+        const photo = document.createElement("div");
+        photo.className = "photo";
 
-        <div class="photo">
-            <div class="placeholder">
-                PHOTO 06
-            </div>
-        </div>
+        const img = document.createElement("img");
 
-    </div>
+        img.src = `images/${encodeURIComponent(`01 JPG (${i}).jpg`)}`;
+        img.alt = `Nanasi Bakery Photo ${i}`;
+        img.loading = "lazy";
 
-</section>
-
-
-<footer>
+        photo.appendChild(img);
+        gallery.appendChild(photo);
+    }
+</script>
 
     © 2026 Elvis Creative · Nanasi Bakery
 
