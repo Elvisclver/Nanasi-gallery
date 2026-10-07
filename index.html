@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Elvis Creative | Online Gallery</title>
+    <title>Nanasi Bakery | Elvis Creative</title>
 
     <style>
         * {
@@ -15,8 +15,8 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #111111;
-            color: white;
+            background: #111;
+            color: #fff;
         }
 
         header {
@@ -28,13 +28,13 @@
         }
 
         .logo {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
             letter-spacing: 2px;
         }
 
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             margin-left: 25px;
             font-size: 14px;
@@ -43,35 +43,42 @@
         .hero {
             min-height: 55vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             text-align: center;
             padding: 60px 20px;
         }
 
         .hero h1 {
-            font-size: clamp(45px, 8vw, 90px);
+            font-size: clamp(50px, 9vw, 100px);
             letter-spacing: 5px;
             margin-bottom: 20px;
         }
 
         .hero p {
-            color: #aaaaaa;
+            color: #bbb;
             font-size: 18px;
         }
 
+        .credit {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #777;
+            letter-spacing: 2px;
+        }
+
         .gallery-section {
-            padding: 50px 7%;
+            padding: 70px 7%;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
         .section-title h2 {
-            font-size: 35px;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin-bottom: 12px;
         }
 
         .section-title p {
@@ -85,7 +92,7 @@
         }
 
         .photo {
-            height: 400px;
+            height: 420px;
             background: #222;
             overflow: hidden;
         }
@@ -94,20 +101,20 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.4s ease;
+            display: block;
+            transition: transform 0.5s ease;
         }
 
         .photo:hover img {
             transform: scale(1.05);
         }
 
-        .empty-photo {
+        .placeholder {
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #666;
-            font-size: 14px;
+            color: #555;
         }
 
         footer {
@@ -115,7 +122,7 @@
             padding: 30px;
             text-align: center;
             border-top: 1px solid #333;
-            color: #777;
+            color: #666;
             font-size: 13px;
         }
 
@@ -139,62 +146,100 @@
 
 <body>
 
-    <header>
-        <div class="logo">ELVIS CREATIVE</div>
+<header>
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#gallery">Gallery</a>
-        </nav>
-    </header>
+    <div class="logo">
+        ELVIS CREATIVE
+    </div>
 
-    <section class="hero">
-        <div>
-            <h1>MY GALLERY</h1>
-            <p>Photography • Videography • Creative Works</p>
-        </div>
-    </section>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
 
-    <section class="gallery-section" id="gallery">
+</header>
 
-        <div class="section-title">
-            <h2>Featured Work</h2>
-            <p>A collection of selected creative work.</p>
-        </div>
 
-        <div class="gallery">
+<section class="hero">
 
-            <div class="photo">
-                <div class="empty-photo">YOUR PHOTO 01</div>
-            </div>
+    <div>
 
-            <div class="photo">
-                <div class="empty-photo">YOUR PHOTO 02</div>
-            </div>
+        <h1>NANASI BAKERY</h1>
 
-            <div class="photo">
-                <div class="empty-photo">YOUR PHOTO 03</div>
-            </div>
+        <p>
+            Cake & Product Photography
+        </p>
 
-            <div class="photo">
-                <div class="empty-photo">YOUR PHOTO 04</div>
-            </div>
-
-            <div class="photo">
-                <div class="empty-photo">YOUR PHOTO 05</div>
-            </div>
-
-            <div class="photo">
-                <div class="empty-photo">YOUR PHOTO 06</div>
-            </div>
-
+        <div class="credit">
+            PHOTOGRAPHY BY ELVIS CREATIVE
         </div>
 
-    </section>
+    </div>
 
-    <footer>
-        © 2026 Elvis Creative. All Rights Reserved.
-    </footer>
+</section>
+
+
+<section class="gallery-section" id="gallery">
+
+    <div class="section-title">
+
+        <h2>Our Gallery</h2>
+
+        <p>
+            A selection of cakes and creative work from Nanasi Bakery.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <div class="photo">
+            <div class="placeholder">
+                PHOTO 01
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="placeholder">
+                PHOTO 02
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="placeholder">
+                PHOTO 03
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="placeholder">
+                PHOTO 04
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="placeholder">
+                PHOTO 05
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="placeholder">
+                PHOTO 06
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Elvis Creative · Nanasi Bakery
+
+</footer>
 
 </body>
 </html>
