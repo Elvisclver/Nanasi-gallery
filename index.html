@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elvis Creative | Online Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111111;
+            color: white;
+        }
+
+        header {
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 55vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #aaaaaa;
+            font-size: 18px;
+        }
+
+        .gallery-section {
+            padding: 50px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #888;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .photo {
+            height: 400px;
+            background: #222;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .photo:hover img {
+            transform: scale(1.05);
+        }
+
+        .empty-photo {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: #777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ELVIS CREATIVE</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>MY GALLERY</h1>
+            <p>Photography • Videography • Creative Works</p>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-title">
+            <h2>Featured Work</h2>
+            <p>A collection of selected creative work.</p>
+        </div>
+
+        <div class="gallery">
+
+            <div class="photo">
+                <div class="empty-photo">YOUR PHOTO 01</div>
+            </div>
+
+            <div class="photo">
+                <div class="empty-photo">YOUR PHOTO 02</div>
+            </div>
+
+            <div class="photo">
+                <div class="empty-photo">YOUR PHOTO 03</div>
+            </div>
+
+            <div class="photo">
+                <div class="empty-photo">YOUR PHOTO 04</div>
+            </div>
+
+            <div class="photo">
+                <div class="empty-photo">YOUR PHOTO 05</div>
+            </div>
+
+            <div class="photo">
+                <div class="empty-photo">YOUR PHOTO 06</div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Elvis Creative. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
